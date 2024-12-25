@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "roboto", sans-serif;
+}
+:root {
+  --dark-green-color: #00727a;
+  --light-green-color: #57bba6;
+  --dark-pink-color: #e84769;
+  --light-pink-color: #f08496;
+  --white-color: #ffffff;
+  --primary-text-color: #333333;
+  --sub-text-color: #666666;
+  --sub-header-text-color: #d6d6d6ec;
+  --transiton: all 0.3s linear;
+}
+.section {
+  padding: 5% 10%;
+}
+.sticky {
+  position: fixed !important; /* Cố định header */
+  top: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  background-color: var(--dark-green-color) !important;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1) !important;
+}
+.title {
+  position: relative;
+  font-family: "Roboto", serif;
+  color: var(--dark-green-color);
+  margin-bottom: 2rem;
+  width: fit-content;
+}
+.title::before {
+  content: "";
+  position: absolute;
+  top: 0.5rem;
+  left: 0;
+  width: 40%;
+  height: 100%;
+  border-bottom: var(--light-pink-color) 5px solid;
+  z-index: -1;
+}
+.description {
+  text-indent: 2em;
+  font-family: "Roboto", serif;
+  color: var(--sub-text-color);
+  margin-bottom: 2rem;
+}
+.btn {
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  outline: none;
+  background-color: transparent;
+  border: none;
+  font-family: "Roboto", serif;
+  font-size: 1rem;
+  border-radius: 2px;
+  cursor: pointer;
+}
+.btn-outline {
+  color: var(--dark-green-color);
+  border: 1px solid var(--dark-green-color);
+  transition: var(--transiton);
+}
+.btn-outline:hover {
+  color: var(--white-color);
+  background-color: var(--dark-green-color);
+}
+.btn-contained {
+  color: var(--white-color);
+  background-color: var(--dark-green-color);
+  border: 1px solid var(--light-green-color);
+  transition: var(--transiton);
+}
+.btn-contained:hover {
+  background-color: var(--light-green-color);
+  color: var(--dark-green-color);
+}
+.product-right {
+  padding: 0 2rem;
+}
+.introduce-right {
+  padding: 0 2rem;
+}
